@@ -115,7 +115,7 @@
         <div class="collage-caption">GRUTAS DE TOLANTONGO</div>
       </a>
 
-      <a href="{{ route('laglo') }}" class="collage-item">
+      <a href="{{ route('lagloria') }}" class="collage-item">
         <img src="{{ asset('img/gloria.jpeg') }}" alt="Gloria">
         <div class="collage-caption">LA GLORIA</div>
       </a>
@@ -145,6 +145,10 @@
   <p>Se ubica en una comarca agrícola de regadío, habitada por pueblos otomíes que conjugan actividades como la cosecha de múltiples alimentos con labores artesanales. De su patrimonio cultural edificado, resalta el antiguo Convento de San Martín Obispo, obra franciscana del siglo XVI que en uno de sus altares tiene una imagen del Señor de la Buena Muerte, un Cristo crucificado alabado desde hace siglos por toda la población. Otra joya de este conjunto es la cruz atrial, escultura de piedra ubicada en el centro del patio del convento, que con su tamaño y estructura majestuosa es testigo de la importancia histórica de Alfajayucan.</p>
   <p>En cuanto a la gastronomía, destaca la tradición de preparar tamales de pollo y cocoles de anís o de calabaza.</p>
 </div>
-
+<div class="collage">
+    <a href="{{ route('presamadho') }}" class="collage-item">
+      <img src="{{ asset('img/presa.jpg') }}" alt="Presa">
+      <div class="collage-caption">PRESA MADHÓ</div>
+    </a>
 </body>
 </html>
