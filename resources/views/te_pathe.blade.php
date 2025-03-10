@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario Te-Pathé</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
      <div class="container">
         <main>
             <div class="balneario">
                 <h1>Balneario Te-Pathé</h1>
-                <img src="img/te_pathe.jpg" alt="Balneario Te-Pathé">
+                <img src="img/te-pathe-logotipo.png" alt="Balneario Te-Pathé">
             </div>
 
             <section class="description">
-                <p>El Balneario Te-Pathé es uno de los destinos más populares en Hidalgo, ofreciendo aguas termales cristalinas, amplias áreas recreativas y un ambiente perfecto para disfrutar con la familia y amigos.</p>
-                <p>Cuenta con diversas atracciones, como toboganes, albercas de diferentes profundidades, zona infantil y áreas de descanso. Además, ofrece servicios de hospedaje y gastronomía típica de la región.</p>
+                <p>Ubicado en el corazón del Valle del Mezquital, este parque cuenta con amplias zonas de entretenimiento para la diversión de tu familia, con áreas específicas para cada uno de sus miembros.</p>
+                <p>Te-Pathé́ cuenta con la alberca de olas más grande del estado de Hidalgo; en esta área tu familia disfrutará de momentos gratos con las olas tipo diamante. Para los niños de entre seis y 12 años existe la Isla Pirata, que es un lugar encantado por castillos y serpientes donde podrán echar a volar su imaginación, inventando miles de aventuras como solo ellos saben hacer. Esta zona está rodeada de un río lento, cuya corriente tenue los deslizará alrededor de la isla.</p>
+                <p>Además, el parque ofrece una Isla de Mariposas para los más pequeñitos del hogar (de tres a ocho años), rodeada de flores y mariposas entre sus mini toboganes, donde los niños y niñas, apoyados por sus padres, vivirán una experiencia de ensueño.</p>
 
                 <h3>Atracciones:</h3>
     
@@ -47,14 +44,8 @@
                 <p>Abierto todos los días del año, de 7:00 AM a 9:00 PM.</p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
+        
      </div>
-</body>
-</html>
+     @endsection
