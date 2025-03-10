@@ -1,0 +1,125 @@
+/* Enlace a Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px 2cm;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Sección Balneario */
+.balneario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.balneario img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.balneario h1 {
+    font-size: 2.5rem;
+    color: #2A7F8E;
+    font-weight: 600;
+    text-align: right;
+    flex: 1;
+    margin-left: 40px;
+}
+
+/* Sección de descripción */
+.description {
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.description h3 {
+    color: #D38F29;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Información adicional */
+.info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.info h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Enlace a servicios (botón) */
+.servicios-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #2A7F8E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    text-align: center;
+    border: 2px solid #2A7F8E; /* Color más suave para el borde */
+}
+
+.servicios-btn:hover {
+    background: #2A7F8E; /* Mantener el mismo color de fondo */
+    border-color: #81C784; /* Borde más suave */
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .balneario {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .balneario img {
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .balneario h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}

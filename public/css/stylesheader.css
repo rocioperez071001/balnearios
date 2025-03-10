@@ -1,0 +1,77 @@
+
+/* Header principal */
+.main-header {
+    background-color: #2A7F8E; /* Mismo tono que el h1 de tu página */
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sección superior con logo y barra de búsqueda */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Título/logo */
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: white; /* Establece el color del texto a blanco */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.search-bar i {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Navegación */
+.main-nav {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.main-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
