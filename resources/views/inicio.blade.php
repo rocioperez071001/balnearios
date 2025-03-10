@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Cielos Termales</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-</head>
-<body>
+@extends('layouts.app')
 
+@section('title','Inicio')
+
+@section('content')
+<div class="container">
   <!-- Sección: Valle del Mezquital -->
   <div class="container">
-    <h2>Valle del Mezquital</h2>
+    <h1>Valle del Mezquital</h1>
     <div class="content">
-      <img src="{{ asset('img/mapa.png') }}" alt="Mapa de Valle del Mezquital">
+      <img src="{{ asset('img/mapa.png') }}" alt="Mapa de Valle del Mezquital" class="map-image">
       <div class="text">
       <p>Esta región de Hidalgo está rodeada por montañas donde destaca el mezquite en su vegetación, además de una gran variedad de cactáceas. Su clima es agradable la mayor parte del año, sólo en invierno se han llegado a registrar temperaturas frías. El Valle del Mezquital ofrece impresionantes vistas a los turistas, para muestra, las rocas de los Frailes que dan la bienvenida a esta hermosa región.</p>
       <p>La gastronomía de estos municipios incluye la barbacoa de borrego, consomé, gusanos de maguey, ximbó, chinicuiles, quesadillas hechas de flores de calabaza, huitlacoche y gualumbos.</p>
@@ -66,10 +62,10 @@
         <div class="collage-caption">DAUTHI</div>
       </a>
 
-    <a href="{{ route('tephe') }}" class="collage-item">
-      <img src="{{ asset('img/tephe.jpg') }}" alt="Tephe">
-      <div class="collage-caption">TEPHE</div>
-    </a>
+      <a href="{{ route('tephe') }}" class="collage-item">
+        <img src="{{ asset('img/tephe.jpg') }}" alt="Tephe">
+        <div class="collage-caption">TEPHE</div>
+      </a>
 
       <a href="{{ route('taxadho') }}" class="collage-item">
         <img src="{{ asset('img/taxadho.jpg') }}" alt="Taxadhó">
@@ -91,11 +87,11 @@
         <div class="collage-caption">LAS CUEVITAS</div>
       </a>
       <a href="{{ route('tollan') }}" class="collage-item">
-        <img src="{{ asset('img/tollan.jpg') }}" alt="Las Cuevitas">
+        <img src="{{ asset('img/tollan.png') }}" alt="Las Cuevitas">
         <div class="collage-caption">TOLLÁN</div>
       </a>
       <a href="{{ route('paraiso') }}" class="collage-item">
-        <img src="{{ asset('img/valle.jpg') }}" alt="Las Cuevitas">
+        <img src="{{ asset('img/valleparaiso.jpg') }}" alt="Valle Paraiso">
         <div class="collage-caption">VALLE PARAÍSO</div>
       </a>
     </div>
@@ -103,7 +99,7 @@
 
   <!-- Sección: Cardonal -->
   <div class="container">
-    <h2>Cardonal</h2>
+    <h3>Cardonal</h3>
     <p>Este municipio se encuentra en los límites donde termina el Valle del Mezquital y comienza la Sierra Gorda; sus primeros pobladores fueron de origen indígena otomí-hñähñu. Posee paisajes contrastantes; los yacimientos metálicos encontrados durante la conquista provocaron la instalación de minas.</p>
     <p>Este lugar posee en su territorio una diversidad de climas que van desde el desierto con vegetación xerófila o el bosque de coníferas, hasta el subtropical en la barranca de Tolantongo, por donde pasa el Río Amajac, en donde el clima cálido y el agua dan lugar a una extensa y verde vegetación.</p>
     <p>Cardonal ofrece a sus visitantes una especial joya colonial y artística de Hidalgo: el Santuario del Señor de Mapethé, ubicado en la población de Santuario, lugar en donde se ubicaban las minas del Real de Plomo Pobre y a donde fue llevado un Cristo que se hizo famoso por sus milagros. Además de su fastuosa fachada, la iglesia posee al interior cinco retablos barrocos cuyo color dorado ilumina el recinto y a ello se suman pinturas religiosas y especiales decorados en la bóveda y columnas del templo.</p>
@@ -116,7 +112,7 @@
       </a>
 
       <a href="{{ route('lagloria') }}" class="collage-item">
-        <img src="{{ asset('img/gloria.jpeg') }}" alt="Gloria">
+        <img src="{{ asset('img/lagloria.png') }}" alt="Gloria">
         <div class="collage-caption">LA GLORIA</div>
       </a>
     </div>
@@ -124,7 +120,7 @@
 
   <!-- Sección: Chilcuautla -->
   <div class="container">
-    <h3>Chilcuautla</h3>
+    <h4>Chilcuautla</h4>
     <p>Chilcuautla es un municipio ubicado en el Valle del Mezquital, por ello tiene una amplia presencia de la cultura otomí-hñänhu en su forma de vida y tradiciones.</p>
     <p>El paisaje muestra por un lado una zona semidesértica y por el otro un atractivo verdor por la abundancia de agua en la parte en donde transcurre el Río Tula por múltiples barrancas. Otra alternativa es caminar por la naturaleza y conocer los vestigios arqueológicos del emblemático Cerro del Elefante.</p>
     <p>De entre su patrimonio monumental destaca la Parroquia de La Asunción, ubicada en la cabecera municipal, la cual fue en un principio una misión agustina y posteriormente fue ocupada por padres jesuitas; en su arte hay expresiones del barroco del siglo XVII. Son también dignas de visita las haciendas de La Cofradía y Demiñho, muestras de la vida campirana de la región, aportando a la producción ganadera y la agrícola del maíz y maguey.</p>
@@ -138,17 +134,18 @@
     </div>
   </div>
 
-<!-- Sección: Alfajayucan -->
-<div class="container">
-  <h4>Alfajayucan</h4>
-  <p>Alfajayucan tiene un territorio conformado por lomeríos y un clima cálido. Posee múltiples presas y embalses de agua construidos para irrigar las tierras de cultivo de la región. En estos cuerpos de agua se produce mojarra, tilapia y carpa, y en ciertas temporadas las aves migratorias surcan el cielo para llegar ahí a reproducirse.</p>
-  <p>Se ubica en una comarca agrícola de regadío, habitada por pueblos otomíes que conjugan actividades como la cosecha de múltiples alimentos con labores artesanales. De su patrimonio cultural edificado, resalta el antiguo Convento de San Martín Obispo, obra franciscana del siglo XVI que en uno de sus altares tiene una imagen del Señor de la Buena Muerte, un Cristo crucificado alabado desde hace siglos por toda la población. Otra joya de este conjunto es la cruz atrial, escultura de piedra ubicada en el centro del patio del convento, que con su tamaño y estructura majestuosa es testigo de la importancia histórica de Alfajayucan.</p>
-  <p>En cuanto a la gastronomía, destaca la tradición de preparar tamales de pollo y cocoles de anís o de calabaza.</p>
+  <!-- Sección: Alfajayucan -->
+  <div class="container">
+    <h5>Alfajayucan</h5>
+    <p>Alfajayucan tiene un territorio conformado en su mayoría por un desierto semi árido, en él habitan diversas especies de cactus y su vegetación, las cuales se acompañan con magueyes que son de gran aprovechamiento en la zona.</p>
+    <p>El municipio cuenta con una gran variedad de balnearios en los cuales se pueden disfrutar de las aguas termales, como el balneario El Paraíso. Además, se encuentran sitios arqueológicos de gran importancia en la cultura otomí.</p>
+    <div class="collage">
+      <a href="{{ route('presamadho') }}" class="collage-item">
+        <img src="{{ asset('img/presamadho.png') }}" alt="Presa Madho">
+        <div class="collage-caption">PRESA MADHO</div>
+      </a>
+    </div>
+  </div>
 </div>
-<div class="collage">
-    <a href="{{ route('presamadho') }}" class="collage-item">
-      <img src="{{ asset('img/presa.jpg') }}" alt="Presa">
-      <div class="collage-caption">PRESA MADHÓ</div>
-    </a>
-</body>
-</html>
+@endsection
+
