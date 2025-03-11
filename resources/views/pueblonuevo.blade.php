@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario Grutas Tolantongo</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
      <div class="container">
         <main>
         <div class="balneario">
+                <img src="img/pueblo-nuevo-logotipo.png" alt="Pueblonuevo">
                 <h1>Balneario Pueblo Nuevo</h1>
-                <img src="img/Pueblonuevo.jpg" alt="Pueblonuevo">
-                
             </div>
 
             <section class="description">
@@ -56,15 +51,9 @@ Si buscas tranquilidad, las albercas de aguas termales son ideales para descansa
              <p><a href="mailto:parqueacuaticopueblonuevo@hotmail.com">contacto@pueblonuevo.mx</a></p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
-        </div>
+       
+        
     </div>
-</body>
-</html>
+    @endsection
