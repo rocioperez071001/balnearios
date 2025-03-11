@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario Grutas Tolantongo</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
      <div class="container">
         <main>
         <div class="balneario">
+                <img src="img/la-heredad-logo.png" alt="heredad">
                 <h1>Balneario La Heredad</h1>
-                <img src="img/heredad.jpg" alt="heredad">
-                
             </div>
 
             <section class="description">
@@ -47,15 +42,9 @@
                 Oficina de 9:00a.m a 8:00p.m de lunes a domingo  <a href="mailto:centroecoturistico_laheredad@hotmail.com">centroecoturistico_laheredad@hotmail.com</a></p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
+       
         </div>
     </div>
-</body>
-</html>
+    @endsection
