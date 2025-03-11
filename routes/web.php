@@ -3,12 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('home');
-
-Route::get('/inicio', function () {
     return view('inicio');
-})->name('inicio');
+})->name('home');
 
 Route::get('/tephe', function () {
     return view('tephe');
@@ -78,11 +74,18 @@ Route::get('/lagloria', function () {
     return view('lagloria');
 })->name('lagloria');
 
-Route::get('/Tlaco', function () {
-    return view('Tlaco');
-})->name('Tlaco');
+Route::get('/tlaco', function () {
+    return view('tlaco');
+})->name('tlaco');
 
 Route::get('/presamadho', function () {
     return view('presamadho');
 })->name('presamadho');
 
+Route::get('/servicios', function () {
+    return view('servicios');
+})->name('servicios');
+
+Route::get('/contacto', function () {
+    return view('contacto');
+})->name('contacto');
