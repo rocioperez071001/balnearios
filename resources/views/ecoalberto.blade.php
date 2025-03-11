@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario EcoAlberto</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-     <div class="container">
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
+<div class="container">
         <main>
             <div class="balneario">
+                <img src="img/ecoalberto-logo.png" alt="EcoAlberto">
                 <h1>Balneario EcoAlberto</h1>
-                <img src="img/1ecoalberto.jpg" alt="EcoAlberto">
             </div>
 
             <section class="description">
@@ -47,14 +43,8 @@
                 <p>Abierto todos los días del año, de 7:00 AM a 9:00 PM.</p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
-     </div>
-</body>
-</html>
+        
+</div>
+     @endsection
