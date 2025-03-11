@@ -1,0 +1,36 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor de la cuadrícula */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Se adapta dinámicamente */
+    gap: 20px;
+    justify-items: center; /* Centra cada elemento */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la cuadrícula en la pantalla */
+}
+
+/* Estilos de cada servicio */
+.service-item {
+    text-align: center;
+    width: 150px;
+}
+
+/* Imágenes dentro de cada servicio */
+.service-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Evita deformaciones */
+}
+
+/* Texto */
+.service-item p {
+    font-size: 14px;
+    margin-top: 10px;
+}
