@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario Grutas Tolantongo</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
-     <div class="container">
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
+<div class="container">
         <main>
         <div class="balneario">
+                <img src="img/las-cuevitas-logo.png" alt="cuevitas">
                 <h1>Balneario Las Cuevitas</h1>
-                <img src="img/cuevitas.jpg" alt="cuevitas">
-                
             </div>
 
             <section class="description">
@@ -46,17 +41,10 @@ Las Cuevitas Balneario Ecoturistico es un gran lugar para pasar un día en famil
                 <h3></h3>
                 <p>Abierto los 365 días del año
                 Oficina de 8:00a.m a 9:00p.m de lunes a domingo  <a href="mailto:"></a></p>
-            </section>
+                </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
-        </main>
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
-        </div>
-    </div>
-</body>
-</html>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
+    </main>
+
+</div>
+@endsection
