@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tephe</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
-    <h1>Tephe</h1>
-    
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
     <div class="container">
         <main>
         <div class="balneario">
-                <img src="img/tephe.jpg" alt="Tephe">
-                <h3>Balneario Tephe</h3>
+                <img src="img/tephe-logo.png" alt="Tephe">
+                <h1>Balneario Tephe</h1>
             </div>
 
             <section class="description">
@@ -35,10 +29,8 @@
                 <p>Todos los días de 6:00 a 20:00 h | <a href="mailto:eltephe@gmail.com">eltephe@gmail.com</a></p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
         </div>
     </div>
-</body>
-</html>
-
+    @endsection
