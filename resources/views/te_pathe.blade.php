@@ -3,11 +3,11 @@
 @section('title','Inicio')
 
 @section('content')
-     <div class="container">
+<div class="container">
         <main>
             <div class="balneario">
+                <img src="img/te-pathe-logotipo.png" alt="Te-Pathé">
                 <h1>Balneario Te-Pathé</h1>
-                <img src="img/te-pathe-logotipo.png" alt="Balneario Te-Pathé">
             </div>
 
             <section class="description">
