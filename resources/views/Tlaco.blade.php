@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tlaco</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
-    <h1>Tlaco</h1>
-    
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
     <div class="container">
         <main>
             <div class="balneario">
-                <img src="img/Tlaco.jpg" alt="Tlaco">
+                <img src="img/tlaco-logo.png" alt="Tlaco">
                 <h3>Balneario Tlaco</h3>
             </div>
 
@@ -30,10 +24,10 @@
 
                 <h3>Contacto</h3>
                 <p>Todos los días de 7:00 a 19:00 h | <a href="mailto:balneariotlaco@gmail.com">balneariotlaco@gmail.com</a></p>
-            </section>
+                </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+                    <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-    </div>
-</body>
-</html>
+
+</div>
+@endsection
