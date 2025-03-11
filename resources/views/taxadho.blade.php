@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario taxadho</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
      <div class="container">
         <main>
         <div class="balneario">
+                <img src="img/taxadho-logo.png" alt="Balneario Taxadho">
                 <h1>Balneario taxadho</h1>
-                <img src="img/taxadho.jpg" alt="Balneario Taxadho">
             </div>
 
             <section class="description">
@@ -45,15 +41,7 @@
                 <a href="mailto:contacto@balneariotaxadho.com">contacto@balneariotaxadho.com</a></p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
-
-        <div class="social-icons">
-            <a href="#"><img src="iconos/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="iconos/github.jpg" alt="GitHub"></a>
-        </div>
     </div>
-</body>
-</html>
+    @endsection
