@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Gloria</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-</head>
-<body>
-    <h1>La Gloria</h1>
-    
-    <div class="container">
+@extends('layouts.app')
+
+@section('title','Inicio')
+
+@section('content')
+<div class="container">
         <main>
             <div class="balneario">
-                <img src="img/La Gloria.png" alt="Balneario La Gloria">
+                <img src="img/la-gloria-logotipo.png" alt="Balneario La Gloria">
                 <h3>Balneario La Gloria</h3>
             </div>
 
@@ -34,8 +28,7 @@
                 <p>Todos los días de 7:00 a 19:00 h | <a href="mailto:balneariolagloria@gmail.com">balneariolagloria@gmail.com</a></p>
             </section>
 
-            <a href="servicios.html" class="btn">Servicios</a>
+            <a href="{{ route('servicios') }}" class="servicios-btn">Servicios</a>
         </main>
     </div>
-</body>
-</html>
+    @endsection
