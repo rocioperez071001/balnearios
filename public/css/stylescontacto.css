@@ -1,6 +1,6 @@
-body {
+body.contact-pag {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 2cm;
     padding: 0;
     background-color: #ffffff;
     display: flex;
@@ -21,17 +21,11 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor principal con espacio solo en los lados */
 .container {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 4cm); /* 2cm de margen a cada lado */
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px auto 60px auto;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto; /* Solo margen a los lados */
 }
 
 main {
@@ -81,6 +75,5 @@ main {
 .contact-form button:hover {
     background-color: #206673;
 }
-
 
 
