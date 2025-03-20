@@ -1,27 +1,27 @@
 /* Enlace a Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-/* Estilos Generales */
+/* Estilos generales */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    align-items: center;
+    min-height: 100vh;
+    color: #000000;
 }
 
 /* Contenedor principal con espacio a los lados */
 .container {
-    margin: 20px auto;
+    margin: 2cm auto;
     max-width: 1200px;
     padding: 10px;
     padding-left: 2cm;
     padding-right: 2cm;
 }
+
 
 /* Títulos */
 h1, h2, h3, h4, h5 {
