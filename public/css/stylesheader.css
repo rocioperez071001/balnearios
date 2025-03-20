@@ -1,77 +1,89 @@
-
-/* Header principal */
+/* Encabezado principal */
 .main-header {
-    background-color: #2A7F8E; /* Mismo tono que el h1 de tu página */
-    padding: 20px 40px;
-    color: rgb(255, 255, 255);
+    background-color: #2A7F8E;
+    color: white;
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 0;
 }
 
-/* Sección superior con logo y barra de búsqueda */
+/* Parte superior con logo y búsqueda */
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 10px 20px;
+    position: relative;
 }
 
 /* Título/logo */
 .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 0;
-    color: white; /* Establece el color del texto a blanco */
+    color: white;
+}
+
+/* Línea divisoria debajo del título */
+.header-divider {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Barra de búsqueda */
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #f1f1f1;
-    border-radius: 25px;
-    padding: 5px 15px;
-    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 .search-bar input {
     border: none;
+    background: none;
     outline: none;
-    background: transparent;
-    font-size: 1rem;
-    flex-grow: 1;
     padding: 5px;
+    font-size: 16px;
 }
 
-.search-bar i {
-    color: #999;
-    font-size: 1rem;
-}
-
-/* Navegación */
+/* Navegación principal */
 .main-nav {
-    margin-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 10px;
+    background-color: #2A7F8E;
+    width: 100%;
 }
 
 .main-nav ul {
-    list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Distribuye a lo largo */
+    align-items: center;
+    list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+}
+
+.main-nav li {
+    flex: 1; /* Todos ocupan el mismo ancho */
+    text-align: center;
 }
 
 .main-nav li a {
-    color: white;
     text-decoration: none;
-    font-weight: 500;
+    color: white;
     font-size: 1rem;
-    padding: 8px 16px;
-    transition: background-color 0.3s;
-    border-radius: 10px;
+    display: block;
+    padding: 15px 0;
+    transition: background 0.3s;
 }
 
 .main-nav li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
