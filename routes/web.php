@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('inicio');
-})->name('home');
+})->name('inicio');
 
 Route::get('/tephe', function () {
     return view('tephe');
@@ -89,3 +89,7 @@ Route::get('/servicios', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+
+Route::get('/locaciones', function () {
+    return view('locaciones');
+})->name('locaciones');
