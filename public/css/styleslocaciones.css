@@ -1,0 +1,56 @@
+#locaciones-page body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#locaciones-page .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#locaciones-page h1 {
+    color: #2A7F8E;
+}
+
+#locaciones-page .collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#locaciones-page .collage-item {
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+#locaciones-page .collage-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#locaciones-page .collage-item:hover img {
+    transform: scale(1.05);
+}
+
+#locaciones-page .collage-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0 0 10px 10px;
+}
