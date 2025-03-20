@@ -8,12 +8,12 @@
 /* Contenedor de la cuadrícula */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Se adapta dinámicamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    justify-items: center; /* Centra cada elemento */
+    justify-items: center;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centra la cuadrícula en la pantalla */
+    margin: 0 auto; /* Centrar horizontalmente */
 }
 
 /* Estilos de cada servicio */
